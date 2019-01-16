@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Target</title>
+</head>
+<body>
+   <div>
+   	  <p> Salve </p>
+   </div>
+
+
+
+</body>
+
+  <script type="text/javascript">
+  	 document.querySelectorAll("p").addEventListener("click", function(event){
+  	 	  var filho = event.target
+  	 	  var pai = filho.parentNode
+  	 
+  	 	  var tag = event.target.tagName
+  	 	  var valor = event.target.innerText
+  	 	 
+  	 	  var insere = document.createElement(tag)
+  	 	  
+
+  	 	  var texto = document.createTextNode(valor)
+  	 	  insere.appendChild(texto)
+
+  	 	 pai.appendChild(insere)
+  	 })
+
+
+  </script>
+
+</html>
