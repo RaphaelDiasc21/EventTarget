@@ -1,1 +1,1 @@
-
+ In this code I just try to use the event as a parameter of a function to take a tag name from the click event and then create a same tag and append it into the div
